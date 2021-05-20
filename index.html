@@ -17,6 +17,25 @@
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel=”canonical” href=”https://kim2039.github.io/” />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            auto: true,
+            pause: 5000,
+            controls: false,
+            pager:false,
+            adaptiveHeight:true,
+            randomStart:true,
+        });
+    });
+</script>
+
 </head>
 
 <body>
@@ -26,9 +45,9 @@
     <nav class="gnav" class="fixed">
       <ul class="gnav-list">
         <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#research-section">RESEARCH</a></li>
         <li class="gnav-item"><a class="gnav-link" href="#works-section">PUBLICATIONS</a></li>
         <li class="gnav-item"><a class="gnav-link" href="#otherworks-section">OTHER WORKS</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#awards-section">AWARDS</a></li>
         <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
       </ul>
     </nav>
@@ -36,9 +55,17 @@
 
     <!-- .header -->
     <header class="header">
-      <h1 class="logo">
+      <h1 class="logo">        
+        <div class="slider slider-div">
+          <img src="img/スポッテッドガー.JPG">
+          <img src="img/アホロートル.JPG">
+          <img src="img/エイ.jpg">
+          <img src="img/ポリプテルスセネガルス.JPG">
+          <img src="img/ハイギョ.JPG">
+          <img src="img/シーラカンス.JPG"> 
+          <img src="img/ポリプテルスデルヘッジ.JPG">         
+        </div>
         <div class="logo-title">YUKI KIMURA</div>
-        <div class="logo-subtitle">PORTFOLIO</div>
       </h1>
     </header>
     <!-- /.header -->
@@ -82,14 +109,39 @@
                 </ul><br>
                 <h3>Keywords</h3>
                 <p>
-                  Evolutionary Biology, Molecular Evolution, Vertebrate Terrestrial Adaptation
+                  Evolutionary Biology, Molecular Evolution, Terrestrial Adaptation of Vertebrate
                 </p>
+                <h3>興味のある生き物</h3>
+                <p>
+                  ポリプテルス、アミメウナギ、ハイギョといった「陸上適応能力をもつ"古代魚"」を中心に、円口類(ヤツメウナギ・ヌタウナギ)、軟骨魚類(サメ、エイ、ギンザメ)、シーラカンス、両生類。
+                </p>                 
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- /.about-section -->
+
+      <!-- .research-section -->
+      <section class="works-section section" id="research-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">RESEARCH</h2>
+          </div>
+          <div class="section-lead">
+            <p>現在の研究テーマ</p>
+          </div>
+          <div class="section-body works">
+            <div class="about-body">
+              <p>
+                　ポリプテルスという魚は陸上でも長期飼育が可能であることが知られています。この魚は陸で過ごせるだけでなく、初期の硬骨魚類にみられる様々な特徴的な形質を多く残しています。ポリプテルスは魚から両生類への進化を明らかにする上で重要な魚なのです。私はこのポリプテルスという魚を陸上で飼育し、体内の器官(内臓)の遺伝子発現がどのような変化を見せるのか、そしてそれが陸上適応とどう関わりがあるのかを明らかにしたいです。<br>
+                　また、最近になってポリプテルスやハイギョのゲノムが解読されました。これらの種のゲノムを解析することで、水中から陸上へと進出する際にどのような配列レベルでの変化が起きたのかを明らかにします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.research-section -->      
 
       <!-- .works-section -->
       <section class="works-section section" id="works-section">
@@ -104,8 +156,8 @@
             <div class="works-list">
               <h2>2021</h2>
               <ol class="count-ex01-2">
-                <li><b>Kimura, Y.</b> and Nikaido, M. (2021). Conserved keratin gene clusters in ancient fish: An evolutionary seed for terrestrial adaptation, <b><i>Genomics</i></b>, 113(1, Part 2): 1120 – 1128. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0888754320320061">LINK</a> / <a href="https://www.biorxiv.org/content/10.1101/2020.05.06.063123v2">bioRxiv</a><br>
-                我々陸上脊椎動物においてケラチンは爪や髪の毛、表皮に存在し、表皮では保湿に関わっています。陸上脊椎動物ではケラチン遺伝子はゲノム上にクラスタを形成していますが、魚類ではこれまで見つかっていませんでした。今回我々は「生きた化石」と呼ばれるような全ゲノム重複以前の条鰭類*、また軟骨魚類などのゲノムを解析することで、ケラチン遺伝子クラスタがそれらの魚にまで遡って存在していることを初めて示しました。また、ポリプテルス目のアミメウナギという魚には既知のクラスタとは異なる場所にケラチン遺伝子のサブクラスタが存在し、両生類の成体表皮で発現するケラチン遺伝子と同様に多様化が進んでいることを明らかにしました。その他にも特定のシステイン残基と陸上適応の関連などを示しました。ポリプテルスやアミメウナギは陸上でもある程度生活できることが知られており、今後より深く見ていきたいと考えています。<br>
+                <li><b>Kimura, Y.</b> and Nikaido, M. (2021). Conserved keratin gene clusters in ancient fish: An evolutionary seed for terrestrial adaptation, <b><i>Genomics</i></b>, 113(1, Part 2): 1120 – 1128. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0888754320320061">LINK</a><br>
+                我々陸上脊椎動物においてケラチンは爪や髪の毛、表皮に存在し、表皮では保湿に関わっています。陸上脊椎動物ではケラチン遺伝子はゲノム上にクラスタを形成していますが、魚類ではこれまで見つかっていませんでした。今回我々は「生きた化石」と呼ばれるような魚であるシーラカンスのゲノムや、全ゲノム重複以前の条鰭類*、また軟骨魚類(ゾウギンザメ)などのゲノムを解析することで、ケラチン遺伝子クラスタがそれらの魚にまで遡って存在していることを初めて示しました。また、ポリプテルス目のアミメウナギという魚には既知のクラスタとは異なる場所にケラチン遺伝子のサブクラスタが存在し、両生類の成体表皮で発現するケラチン遺伝子と同様に多様化が進んでいることを明らかにしました。その他にも特定のシステイン残基と陸上適応の関連などを示しました。ポリプテルスやアミメウナギは陸上でもある程度生活できることが知られており、今後より深く見ていきたいと考えています。<br>
                 * 私達が普段食卓で目にするような魚のほとんどは「真骨魚類」に分類される魚で、全ゲノムが倍加するという「全ゲノム重複」を共通祖先の段階で経験しています。
                 </li>
               </ol>
@@ -140,35 +192,11 @@
                 <li>木村優希, 二階堂雅人. 「古代魚において保存されたケラチン遺伝子クラスタと陸上環境適応の関連」 日本進化学会第22回オンライン大会. 2020年9月6-9日. オンライン.</li>
                 <li>木村優希, 二階堂雅人. 「古代魚におけるケラチン遺伝子クラスタの保存と陸上適応との関連性」 日本遺伝学会第92回大会. 2020年9月16日. 熊本.</li>
               </ol>
-              <h2>2017</h2>
-              <ol class="count-ex01-1">
-                <li>木村優希, 山下裕己. 「魚はなぜ陸を目指したか ～映像解析で明らかにするポリプテルスの肺を利用した生存戦略～」(口頭発表; 演題採択率:53%) 文部科学省主催第6回サイエンス・インカレ. 2017年3月. つくば.(サイエンス・インカレ審査員特別賞)</li>
-              </ol>
             </div>
           </div>
         </div>
       </section>
       <!-- /.feature-section -->
-
-      <!-- .awards-section -->
-      <section class="feature-section section" id="awards-section">
-        <div class="inner">
-          <div class="section-heading">
-            <h2 class="heading-primary">AWARDS</h2>
-            <p>受賞歴など</p>
-          </div>
-          <div class="section-body works">
-            <div class="works-list">
-              <h2>2017</h2>
-              <ol class="count-ex01-1">
-                <li>審査員特別賞 (文部科学省主催 第6回サイエンス・インカレ)</li>
-                <li>京都工芸繊維大学学生表彰 学術研究活動</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.awards-section -->
 
       <!-- .contact-section -->
       <section class="contact-section section" id="contact-section">
@@ -277,10 +305,6 @@
     </div>
 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe-setup.js"></script>
   <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
 </body>
