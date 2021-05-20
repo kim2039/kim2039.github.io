@@ -203,7 +203,6 @@ li {
  Works
 ---------------------------------*/
 .works-list {
-  display: flex;
   flex-wrap: wrap;
   margin-bottom: -40px;
   max-width: 800px;
