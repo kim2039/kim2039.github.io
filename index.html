@@ -56,6 +56,20 @@
     <!-- .header -->
     <header class="header">
       <h1 class="logo">        
+        <script type="text/javascript">
+          var imglist = new Array(
+             "img/スポッテッドガー.JPG",
+             "img/アホロートル.JPG",
+             "img/エイ.jpg",
+             "img/ポリプテルスセネガルス.JPG",
+             "img/ハイギョ.JPG",
+             "img/シーラカンス.JPG",
+             "img/ポリプテルスデルヘッジ.JPG" );
+          var selectnum = Math.floor(Math.random() * imglist.length);
+          var output = "<img src=" + imglist[selectnum] + " style='width:100%;'>";
+          document.write(output);
+       </script>
+       <!--
         <div class="slider slider-div">
           <img src="img/スポッテッドガー.JPG">
           <img src="img/アホロートル.JPG">
@@ -65,6 +79,7 @@
           <img src="img/シーラカンス.JPG"> 
           <img src="img/ポリプテルスデルヘッジ.JPG">         
         </div>
+      -->
         <div class="logo-title">YUKI KIMURA</div>
       </h1>
     </header>
