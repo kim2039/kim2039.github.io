@@ -32,6 +32,17 @@ li {
   list-style: none;
 }
 
+.skill-text ul {
+  list-style: disc;
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+
+.skill-text li {
+  list-style: disc;
+  margin-bottom: 0.3em;
+}
+
 .pc-only {
   display: block;
 }
